@@ -10,7 +10,10 @@ Genauigkeit. Absolute Genauigkeit des Barometers ist 0.6 mbar, relativ 0.12 mbar
 was nur 1,7 cm Höhe entspricht. Der Temperatursensor ist auf 1 Grad genau und misst von -40 bis 85 Grad.
 
 ### BMP384
-
+Dieser Sensor ist gelgefüllt und daher feuchtigkeitsunempfindlicher. Absolute Genauigkeit ist 50 Pa (0.5 mbar), Temperaturkoeffizient
+1 Pa/K, und relativ 9 Pa (0.09 mbar). Es gibt ein breakout von sparkfun mit Qwiic Konnektoren für ca. 20 Euro (Eckstein). Dieser
+ist also der genaueste der drei.
 
 ### HP206C
-
+Das ist wohl der verbreitetste Sensor, gibt es zB bei reichelt für 18,20 EUR. Misst absolut auf 1.5 mbar (150 Pa) genau, 
+relativ auf 0.5 mbar (50 Pa). Der ist also relativ deutlich ungenauer als die beiden anderen.
