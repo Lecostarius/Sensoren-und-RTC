@@ -18,3 +18,12 @@ ist also der genaueste der drei.
 ### HP206C
 Das ist wohl der verbreitetste Sensor, gibt es zB bei reichelt für 18,20 EUR. Misst absolut auf 1.5 mbar (150 Pa) genau, 
 relativ auf 0.5 mbar (50 Pa). Der ist also relativ deutlich ungenauer als die beiden anderen.
+
+### MS5611 
+Das ist der Sensor, den ich früher in meine Kopter eingebaut habe. Ein MS5611-BA03 kostet heute ca. 8-11 Euro.
+
+### BMP180
+
+
+### BMP280
+
