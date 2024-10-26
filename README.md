@@ -2,13 +2,20 @@
 
 ## Drucksensoren (Barometer)
 
-### BME680
+Zusammenfassung: Der BMP390 von Bosch ist der beste von allen, kostet aber knapp 20 Euro als breakout. Alternativ ist der BMP280
+zu nennen, den gibt es für 2-3 Euro und er ist immer noch besser als der MS5611 den ich damals für die Kopter genommen habe und 
+von dem ich so begeistert war. Für Außeneinsätze sollte man auch den BMP384 in Betracht ziehen. Der ist besser als der BMP280
+(und schlechter als der BMP390), aber gelgefüllt und daher feuchtigkeitsunempfindlicher.
+
+
+### BME680 (und BME688)
 Alter Bosch-Sensor, für neue Projekte nicht mehr empfohlen. Ich habe ein Watterott-Breakout. Das ist ein Vierfach-Sensor,
 eigentlich für Luftqualität, er misst auch Temperatur, Feuchte, und Luftdruck. I2C oder SPI Interface, das Breakout kann
 man mit 3.3V oder 5 V betreiben. Die Genauigkeit ist +-3% Feuchte, IAQ (Luftqualität) von 0 bis 500 mit vernünftiger
 Genauigkeit. Absolute Genauigkeit des Barometers ist 0.6 mbar, relativ 0.12 mbar, und die Rauschgrenze liegt bei 0.2 Pa
 was nur 1,7 cm Höhe entspricht. Man kann das Baro mit 150 sps samplen. Der Temperatursensor ist auf 1 Grad genau und misst 
 von -40 bis 85 Grad. Meiner hat I2C Adresse 0x77.
+Die neue Version heisst BME688 und hat eingebaute KI.
 
 ### BMP384
 Dieser Sensor ist gelgefüllt und daher feuchtigkeitsunempfindlicher. Absolute Genauigkeit ist 50 Pa (0.5 mbar), Temperaturkoeffizient
@@ -26,7 +33,6 @@ bis 0,012 mbar (1.2 Pa), die Antwortzeit ist sehr kurz (unter 8 ms), die absolut
 1 mbar pro Jahr. Dieser Sensor funktioniert schon ab 10 mbar Druck, die Boschsensoren typisch erst ab 300. RMS noise liegt bei 1,2 Pa 
 bei langsamer Messung (110 sps).
 
-### BMP085
 
 ### BMP180
 Nachfolger des BMP085, spottbillig. Absolute Genauigkeit -4 bis +2 mbar, relativ +-0.12 mbar. Rauschen in ultra high res 0,03 mbar (3 Pa).
@@ -34,6 +40,19 @@ Der BMP280 ist in allen Parametern besser als der BMP180 und kostet ebenfalls fa
 wenn man nicht gerade 100000 Stück braucht.
 
 ### BMP280
-Absolute Genauigkeit +-1 mbar. Temperaturkoeffizient 1,5 Pa/K. Relative Genauigkeit 0,12 mbar. Rauschen minimal 1,3 Pa. Bis zu 157 sps
+Absolute Genauigkeit +-1 mbar. Temperaturkoeffizient 1,5 Pa/K. Relative Genauigkeit 0,12 mbar (12 Pa). Rauschen minimal 1,3 Pa. Bis zu 157 sps
 schnell, Temperatursensor mit 0,01 Grad Auflösung. Der BMP280 ist ein rundum verbesserter BMP180. Der Preis ist ebenfalls superbillig,
 amazon bietet 5 Stück für unter 10 Euro an. 
+
+### BMP390 (Vorgänger ist der BMP388)
+Absolut +-50 Pa, relativ +-3 Pa, Temperaturkoeffizient 0,6 Pa/K, Nachfolger des BMP380. Rauschen 0,9 Pa bis minimal mit Filter 0,02 Pa.
+Driftet 0,16 mbar/Jahr. Es gibt den von adafruit. Der BMP388 ist der Vorgänger, nicht mehr für neue Designs empfohlen.
+
+### BMP380
+Nicht empfohlen f. neue Designs, man soll den BMP390 nehmen. Absolut 50 Pa, relativ 6 Pa, 200 sps.
+
+### DPS310
+Barometer von infineon. Es gibt ein adafruit-Breakout. Absolut 1 mbar, relativ 6 Pa (0,06 mbar) genau. Temperaturkoeffizient 0,5 Pa/K. 
+Macht nur 35 sps bei höchster Genauigkeit. Messrauschen (dort pressure precision genannt) ist 0,35 Pa Standard, 0,2 Pa high precision.
+
+
