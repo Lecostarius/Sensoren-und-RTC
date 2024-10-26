@@ -13,7 +13,8 @@ von -40 bis 85 Grad. Meiner hat I2C Adresse 0x77.
 ### BMP384
 Dieser Sensor ist gelgefüllt und daher feuchtigkeitsunempfindlicher. Absolute Genauigkeit ist 50 Pa (0.5 mbar), Temperaturkoeffizient
 1 Pa/K, und relativ 9 Pa (0.09 mbar). Es gibt ein breakout von sparkfun mit Qwiic Konnektoren für ca. 20 Euro (Eckstein). Dieser
-ist also der genaueste der drei.
+ist also der genaueste der drei. Die Rauschgrenze liegt bei 1,2 Pa bei maximaler Geschwindigkeit und 0,03 Pa bei niedrigster
+Geschwindigkeit und eingeschaltetem Filter.
 
 ### HP206C
 Das ist wohl der verbreitetste Sensor, gibt es zB bei reichelt für 18,20 EUR. Misst absolut auf 1.5 mbar (150 Pa) genau, 
