@@ -42,7 +42,11 @@ wenn man nicht gerade 100000 Stück braucht.
 ### BMP280
 Absolute Genauigkeit +-1 mbar. Temperaturkoeffizient 1,5 Pa/K. Relative Genauigkeit 0,12 mbar (12 Pa). Rauschen minimal 1,3 Pa. Bis zu 157 sps
 schnell, Temperatursensor mit 0,01 Grad Auflösung. Der BMP280 ist ein rundum verbesserter BMP180. Der Preis ist ebenfalls superbillig,
-amazon bietet 5 Stück für unter 10 Euro an. 
+amazon bietet 5 Stück für unter 10 Euro an. Ich habe ein Board von Eckstein gekauft, von QITA. Dabei musste ich feststellen, dass man zwar
+Pin CSB auf High ziehen muss (Chip Select), aber beim Pin SDO, was laut allen Beschreibungen die I2C-Adresse zwischen 0x76 und 0x77 umschaltet,
+führt das Anlegen von +3,3V zur Zerstörung des Chips: ab da gibt er nur noch 0 aus (meldet sich aber brav über I2C). Wenn ich es unbeschaltet
+lasse, tut der Sensor auf I2C-Adresse 0x76, obwohl das Datenblatt sagt, man müsse das Pin beschalten und laut Ohmmeter das Breakout auch
+keine Pullups oder Pulldowns verwendet. Rätselhaft!
 
 ### BMP390 (Vorgänger ist der BMP388)
 Absolut +-50 Pa, relativ +-3 Pa, Temperaturkoeffizient 0,6 Pa/K, Nachfolger des BMP380. Rauschen 0,9 Pa bis minimal mit Filter 0,02 Pa.
