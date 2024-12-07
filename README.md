@@ -20,6 +20,15 @@ MCP7940
 DS1387
 
 vermutlich am besten: DS3231 und RV3029. Beide sind temperaturstabilisiert. Der DS1307 ist die nicht temperaturstabilisierte Variante des DS3231 (?).
+RV3029: 3 ppm accuracy; vermutlich gerade noch handlötbar (keine Pins, immerhin 1 mm Abstand der Löt-Seiten).
+
+DS3231: 1.5 ppm accuracy; kommt im 16-SO package (16 pins, davon 8 not connected, mit 1.27 mm Pinabstand)
+
+Vom DS3231 gibt es eine Menge breakout boards. Ausserdem ist er lötfreundlicher und genauer. Der Stromverbrauch des RV3029 liegt bei 800 nA, der des DS3231
+bei 110 uA, also mehr als 100 mal höher.
+
+
+
 
 
 
