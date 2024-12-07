@@ -1,3 +1,27 @@
+# RTC (real time clocks)
+RX8111CE
+RX4111CE
+RV-8803-C7
+CBC921xx
+M41T62
+RV2123
+RV3049 (SPI)
+RV3029 (I2C)
+PCF8563/83
+PCF2123 (small power: 100 nA at 1.5 V)
+PCF8523 (wie PCF2123, mit battery backup)
+
+DS3231M
+DS3232
+DS3234
+DS1307
+DS1302
+MCP7940
+DS1387
+
+vermutlich am besten: DS3231 und RV3029
+
+
 # Sensoren
 
 ## Drucksensoren (Barometer)
