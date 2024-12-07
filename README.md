@@ -19,7 +19,8 @@ DS1302
 MCP7940
 DS1387
 
-vermutlich am besten: DS3231 und RV3029
+vermutlich am besten: DS3231 und RV3029. Beide sind temperaturstabilisiert. Der DS1307 ist die nicht temperaturstabilisierte Variante des DS3231 (?).
+
 
 
 # Sensoren
