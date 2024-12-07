@@ -1,4 +1,21 @@
 # RTC (real time clocks)
+
+Most RTC chips use an external 32768 Hz quartz; their accuracy then depends on the quartz, which typically has something like
++-20 or +-30 ppm. Many chips allow to compensate this 20-30 ppm deviation so that with 25 degree Celsius we can get an accuracy
+of typical 1 ppm. With temperature, that changes, and if the uC reads temperature, it can correct the deviation correction and
+achieve the accuracy at a larger temperature range.
+
+I found two chips that have the quartz already integrated (and both also use automatic, integrated temperature compensation):
+the DS3231 and the RV3029. Accuracy is roughly comparable (3 ppm for RV3029, +-2ppm for 3231), battery current draw is similar
+(800 nA for RV3029, 860 nA at 5 minute temp recalibration interval the 3231), so the main difference is the package. The RV3029
+has only 8 pins - the 3231 has 16, but the RV3029 comes in a strange, almost not hand-solderable package while the 3231 is 16-SO
+with 1.27mm pin separation.
+
+Other than that, with external quartz, the PCF8523 stands out with a current consumption of 100 nA in standby.There is a SO-8 
+package for it.
+
+Here is a list of types I found (there are many): 
+
 RX8111CE
 RX4111CE
 RV-8803-C7
@@ -28,8 +45,10 @@ Vom DS3231 gibt es eine Menge breakout boards (Vorsicht: es gibt viele, die vers
 Ausserdem ist er lötfreundlicher und genauer. Die Breakout-Boards sind z.T. billiger als der Chip alleine - jedenfalls bei AliExpress. Das AdaFruit
 breakout liegt bei über 20 Euro (das chinesische bei 2).
 
-Der Stromverbrauch des RV3029 liegt bei 800 nA, der des DS3231 bei 110 uA, also mehr als 100 mal höher. 0,1 mA erfordern natürlich eine große
-Batterie (CR2032), da liegt dann der Unterschied. 
+Der Stromverbrauch des RV3029 liegt bei 800 nA, der des DS3231 bei 840 bis 2500 uA je nachdem ob er jede Minute oder nur alle 10 Minuten die Temperaturkompensation
+durchführen soll. 
+Es spricht also eigentlich nur das kleine Package (das aber schlecht zu handlöten ist) für den RV3029, ansonsten brauchen alle RTC einen externen Quarz,
+also ist der DS3231 der Chip der Wahl. 
 
 
 
