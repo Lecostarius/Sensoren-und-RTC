@@ -24,8 +24,12 @@ RV3029: 3 ppm accuracy; vermutlich gerade noch handlötbar (keine Pins, immerhin
 
 DS3231: 1.5 ppm accuracy; kommt im 16-SO package (16 pins, davon 8 not connected, mit 1.27 mm Pinabstand)
 
-Vom DS3231 gibt es eine Menge breakout boards. Ausserdem ist er lötfreundlicher und genauer. Der Stromverbrauch des RV3029 liegt bei 800 nA, der des DS3231
-bei 110 uA, also mehr als 100 mal höher.
+Vom DS3231 gibt es eine Menge breakout boards (Vorsicht: es gibt viele, die versuchen, die Batterie aufzuladen - eine CR2032 nimmt das sehr übel!). 
+Ausserdem ist er lötfreundlicher und genauer. Die Breakout-Boards sind z.T. billiger als der Chip alleine.
+
+Der Stromverbrauch des RV3029 liegt bei 800 nA, der des DS3231 bei 110 uA, also mehr als 100 mal höher. 0,1 mA erfordern natürlich eine große
+Batterie (CR2032), da liegt dann der Unterschied. 
+
 
 
 
