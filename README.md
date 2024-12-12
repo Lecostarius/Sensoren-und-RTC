@@ -35,6 +35,7 @@ DS1307
 DS1302
 MCP7940
 DS1387
+DS1390-1394 (analog devices, 3-wire SPI bus, they offer 0.01 seconds ticks)
 
 vermutlich am besten: DS3231 und RV3029. Beide sind temperaturstabilisiert. Der DS1307 ist die nicht temperaturstabilisierte Variante des DS3231 (?).
 RV3029: 3 ppm accuracy; vermutlich gerade noch handlötbar (keine Pins, immerhin 1 mm Abstand der Löt-Seiten).
@@ -50,6 +51,8 @@ durchführen soll.
 Es spricht also eigentlich nur das kleine Package (das aber schlecht zu handlöten ist) für den RV3029, ansonsten brauchen alle RTC einen externen Quarz,
 also ist der DS3231 der Chip der Wahl. 
 
+
+So ziemlich keiner der Chips liefert kleinere Zeiteinheiten als ganze Sekunden. Ausnahme sind die DS1390 bis DS1394 von analog, die 0.01s liefern.
 
 
 
