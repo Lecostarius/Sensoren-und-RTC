@@ -2,6 +2,10 @@
 ### LD2410B
 https://drive.google.com/drive/folders/16zI-fium_BZeP08EyQke0rWp0BJTMvw3
 
+### Waveshare WS-26535
+https://www.waveshare.com/wiki/HMMD_mmWave_Sensor#Hardware_Preparation_.26_Connection_3
+
+
 # RTC (real time clocks)
 
 Most RTC chips use an external 32768 Hz quartz; their accuracy then depends on the quartz, which typically has something like
