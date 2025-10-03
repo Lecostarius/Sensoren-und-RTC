@@ -5,6 +5,12 @@ https://drive.google.com/drive/folders/16zI-fium_BZeP08EyQke0rWp0BJTMvw3
 ### Waveshare WS-26535
 https://www.waveshare.com/wiki/HMMD_mmWave_Sensor#Hardware_Preparation_.26_Connection_3
 
+# PIR (Infrarot Bewegungsdetektoren)
+### DFROBOT SEN 0171
+https://www.dfrobot.com/product-1140.html
+
+### HC-SR501
+Datenblatt siehe oben in der Dateiliste
 
 # RTC (real time clocks)
 
