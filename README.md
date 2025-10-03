@@ -7,9 +7,11 @@ https://www.waveshare.com/wiki/HMMD_mmWave_Sensor#Hardware_Preparation_.26_Conne
 
 Die Waveshare-Sachen sind generell nicht so prickelnd. Das Radar lässt sich am Waveshare-FTDI nicht einschalten;
 man muss alle Drähte anschließen, dann USB anschließen, dann +3,3V anschließen - sonst stürzt der FTDI ab. Zu
-hoher Stromverbrauch vielleicht?
-Ich bekomme bei dem Ding kaum jemals die Detektionsschwelle erreicht, er bleibt immer knapp unter 50%. Grundsätzlich
-geht es aber, ich kann den Abstand zum Sensor mit dem Windows-Tool was dazugehört sehen.
+hoher Stromverbrauch vielleicht? Der alte Watterott FTDI funktioniert demgegenüber einwandfrei.
+
+Ich bekomme bei dem Radar aber kaum jemals die Detektionsschwelle erreicht, er bleibt immer knapp unter 50%. Selbst wenn
+ich mir eine Metallplatte vorhalte. Grundsätzlich geht es aber, ich kann den Abstand zum Sensor mit dem Windows-Tool was 
+dazugehört sehen.
 
 # PIR (Infrarot Bewegungsdetektoren)
 ### DFROBOT SEN 0171
