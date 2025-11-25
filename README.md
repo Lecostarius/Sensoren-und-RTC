@@ -13,12 +13,12 @@ Ich bekomme bei dem Radar aber kaum jemals die Detektionsschwelle erreicht, er b
 ich mir eine Metallplatte vorhalte. Grundsätzlich geht es aber, ich kann den Abstand zum Sensor mit dem Windows-Tool was 
 dazugehört sehen.
 
-## DFROBOT SEN0609
+### DFROBOT SEN0609
 24 GHz Radar mit 100 Grad Winkel Azimut, 40 Grad Elevation, FMCW, bis 25m (Abstand) und 16 m (Detektion von Personen). Misst auch Geschwindigkeiten
 im Bereich von 0,1 bis 10 m/s. https://wiki.dfrobot.com/SKU_SEN0609_C4001_mmWave_Presence_Sensor_25m
 
 
-## K-MD7 von RFbeam
+### K-MD7 von RFbeam
 (gibts bei digikey), ich hab keinen, kostet 140 Euro, kann bis 150m Entfernung auch Autos bis 200 km/h messen.
 
 # PIR (Infrarot Bewegungsdetektoren)
