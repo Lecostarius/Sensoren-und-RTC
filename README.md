@@ -21,6 +21,9 @@ im Bereich von 0,1 bis 10 m/s. https://wiki.dfrobot.com/SKU_SEN0609_C4001_mmWave
 ### K-MD7 von RFbeam
 (gibts bei digikey), ich hab keinen, kostet 140 Euro, kann bis 150m Entfernung auch Autos bis 200 km/h messen.
 
+### Hi-Link LD2415H
+Gibts bei AliExpress für ca 30 Euro, kann auch Autos messen. 
+
 # PIR (Infrarot Bewegungsdetektoren)
 ### DFROBOT SEN 0171
 https://www.dfrobot.com/product-1140.html
