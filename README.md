@@ -57,7 +57,7 @@ M41T62
 RV2123
 RV3049 (SPI)
 RV3028 (+- 1 ppm calibrated, 70 nA current draw)
-RV3029 (I2C) (typ 3 ppm, 700 nA current draw)
+RV3029 (I2C) (typ 3 ppm, 700 nA current draw) - deprecated, man soll den RV3028 nutzen
 PCF8563/83
 PCF2123 (small power: 100 nA at 1.5 V)
 PCF8523 (wie PCF2123, mit battery backup)
@@ -80,13 +80,12 @@ Vom DS3231 gibt es eine Menge breakout boards (Vorsicht: es gibt viele, die vers
 Ausserdem ist er lötfreundlicher und genauer. Die Breakout-Boards sind z.T. billiger als der Chip alleine - jedenfalls bei AliExpress. Das AdaFruit
 breakout liegt bei über 20 Euro (das chinesische bei 2).
 
-Der Stromverbrauch des RV3029 liegt bei 800 nA, der des DS3231 bei 840 bis 2500 uA je nachdem ob er jede Minute oder nur alle 10 Minuten die Temperaturkompensation
-durchführen soll. 
-Es spricht also eigentlich nur das kleine Package (das aber schlecht zu handlöten ist) für den RV3029, ansonsten brauchen alle RTC einen externen Quarz,
-also ist der DS3231 der Chip der Wahl. 
-
+Der beste Chip ist der RV3028 (niedrigster Stromverbrauch und höchste Genauigkeit). Stand September 2026 gibt es aber nur ein einziges Breakout von Pimoroni
+(PIM449), und das ist ausverkauft.
 
 So ziemlich keiner der Chips liefert kleinere Zeiteinheiten als ganze Sekunden. Ausnahme sind die DS1390 bis DS1394 von analog, die 0.01s liefern.
+
+Als Batterie-Backup kommt auch ein Supercap in Frage!
 
 https://hexaspot.com/collections/rakwireless-wisblock-extra?filter.v.availability=1 is the RAK12002 breakout board which uses a RV-3028-C7 chip 
 which is the top of the line, and has a supercapacitor backup power source on the breakout board. Some info can be found at the website of the
