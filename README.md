@@ -56,7 +56,8 @@ CBC921xx
 M41T62
 RV2123
 RV3049 (SPI)
-RV3029 (I2C)
+RV3028 (+- 1 ppm calibrated, 70 nA current draw)
+RV3029 (I2C) (typ 3 ppm, 700 nA current draw)
 PCF8563/83
 PCF2123 (small power: 100 nA at 1.5 V)
 PCF8523 (wie PCF2123, mit battery backup)
@@ -86,6 +87,11 @@ also ist der DS3231 der Chip der Wahl.
 
 
 So ziemlich keiner der Chips liefert kleinere Zeiteinheiten als ganze Sekunden. Ausnahme sind die DS1390 bis DS1394 von analog, die 0.01s liefern.
+
+https://hexaspot.com/collections/rakwireless-wisblock-extra?filter.v.availability=1 is the RAK12002 breakout board which uses a RV-3028-C7 chip 
+which is the top of the line, and has a supercapacitor backup power source on the breakout board. Some info can be found at the website of the
+manufacturer https://store.rakwireless.com/products/rtc-module-rak12002. That would be the ideal combination - unfortunately, this is part of the
+Wisblock ecosystem which uses proprietary connectors. So it cannot be (easily) used in my projects.
 
 
 
