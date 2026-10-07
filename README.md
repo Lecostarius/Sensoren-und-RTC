@@ -158,4 +158,10 @@ Nicht empfohlen f. neue Designs, man soll den BMP390 nehmen. Absolut 50 Pa, rela
 Barometer von infineon. Es gibt ein adafruit-Breakout. Absolut 1 mbar, relativ 6 Pa (0,06 mbar) genau. Temperaturkoeffizient 0,5 Pa/K. 
 Macht nur 35 sps bei höchster Genauigkeit. Messrauschen (dort pressure precision genannt) ist 0,35 Pa Standard, 0,2 Pa high precision.
 
+# Temperatursensoren
+
+### DS18B20+
+Digitaler (3-pin) Temperatursensor mit +-0.5K Genauigkeit. Verwendet das 1-wire Protokoll. Libraries unter Arduino sind z.B. OneWire und
+DallasTemperature.
+
 
