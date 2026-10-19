@@ -164,4 +164,9 @@ Macht nur 35 sps bei höchster Genauigkeit. Messrauschen (dort pressure precisio
 Digitaler (3-pin) Temperatursensor mit +-0.5K Genauigkeit. Verwendet das 1-wire Protokoll. Libraries unter Arduino sind z.B. OneWire und
 DallasTemperature.
 
+### TS-NTC 100K6A1 von B+B Thermotechnik
+Es gibt 4 Versionen, 100K6A1A bis 100K6A1D. A hat 0.1 Grad Toleranz, B 0.2, C 0.5, und D 1.0. Der Nennwiderstand meiner
+Version ist 100 kOhm. Er tut von -40 bis +125 Grad Celsius und hat Widerstandswerte von 4 MOhm (bei -40 Grad) bis 2640 Ohm
+(bei 125 Grad). Der Gradient bei 20 Grad liegt bei fast 6 kOhm (6%) pro Grad Celsius.
+Das Datenblatt ist oben angehängt.
 
